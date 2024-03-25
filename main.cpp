@@ -6,9 +6,8 @@ using std::cout;
 using std::endl;
 using std::string;
 
-
 // Resolução Questão 1:
-int potencia(int iBase, int iExpoente){
+int potencia(int& iBase, int& iExpoente){
     int iResposta = 1;
     for(int i=0; i<iExpoente; i++){
         iResposta = iResposta * iBase;
@@ -23,13 +22,12 @@ int main()
     int iExpoente;
     int iResposta;
 
-
-    std::cin >> iBase;
-    std::cin >> iExpoente;
+    cin >> iBase;
+    cin >> iExpoente;
 
     iResposta = potencia(iBase, iExpoente);
 
-    std::cout << iResposta;
+    cout << iResposta;
 
     return 0;
 }
