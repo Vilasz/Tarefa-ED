@@ -6,15 +6,11 @@ using std::cout;
 using std::endl;
 using std::string;
 
-// Resolução Questão 1:
-int potencia(int& iBase, int& iExpoente){
-    int iResposta = 1;
-    for(int i=0; i<iExpoente; i++){
-        iResposta = iResposta * iBase;
-    }
+int fatorial(int iNumero);
+int fibonacci(int iPosFibonacci);
+int numdigitos(float fNumero);
 
-    return iResposta;
-}
+
 
 int main()
 {
@@ -70,6 +66,15 @@ int potencia(int& iBase, int& iExpoente){
         iResposta *= iBase;
     }
     return iResposta;
+}
+
+int fatorial(int& iNumero) {
+    int iResposta = iNumero;
+    if (iNumero == 1) {
+        return 1;
+    } else {
+        return iResposta * fatorial(--iNumero);
+    }
 }
 
 int progressao_aritmetica(int& iInicial, int& iRazao, int& iPosicao) {
