@@ -6,9 +6,14 @@ using std::cout;
 using std::endl;
 using std::string;
 
-int fatorial(int iNumero);
-int fibonacci(int iPosFibonacci);
-int numdigitos(float fNumero);
+
+int potencia(int& iBase, int& iExpoente);
+int progressao_aritmetica(int& iInicial, int& iRazao, int& iPosicao);
+int fatorial(int& iNumero);
+int fibonacci(int& iPosFibonacci);
+int numdigitos(float& fNumero);
+
+
 
 
 
